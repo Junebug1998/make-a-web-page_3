@@ -1,0 +1,32 @@
+/* Let's organize our selectors and put tag selectors up top first and then put class selectors next */
+
+/* Don't forget that we need to use the '*' selector, this is called the 'Universal Selector' */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+
+.title {
+  color: green;
+  background-color: yellow; /* Make sure all CSS declarations end with a semicolon! */
+}
+
+.Notes {
+  display: flex;
+}
+
+/* Since Stage 0 and Stage 1 have identical declarations, why don't we just use one ruleset named with a class name "Stage" and assign this class to both the Stage 0 and Stage 1 div in our html?
+*/
+.Stage {
+  width: 30%;
+  /* Preferably we use the short-hand property: margin */
+  margin: 0 5% 0 10%;
+  /*margin-left: 10%;
+  margin-right: 5%;*/
+  padding: 2px;
+  background-color: #0ad7b8;
